@@ -1,6 +1,9 @@
 import 'package:api_intigration_tutorial/screens/home_screen.dart';
+import 'package:api_intigration_tutorial/screens/Signup_screen.dart';
 import 'package:api_intigration_tutorial/screens/users_screen.dart';
 import 'package:flutter/material.dart';
+
+import 'screens/upload_image_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,9 +18,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         title: 'Flutter Demo',
         theme: ThemeData(
+          scaffoldBackgroundColor: const Color.fromARGB(255, 236, 220, 239),
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        home: const UsersScreen());
+        home: const UploadImageScreen());
   }
 }
