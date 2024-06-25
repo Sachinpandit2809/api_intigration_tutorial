@@ -1,4 +1,5 @@
-import 'package:api_intigration_tutorial/home_screen.dart';
+import 'package:api_intigration_tutorial/screens/home_screen.dart';
+import 'package:api_intigration_tutorial/screens/users_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -17,6 +18,6 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        home: const HomeScreen());
+        home: const UsersScreen());
   }
 }
