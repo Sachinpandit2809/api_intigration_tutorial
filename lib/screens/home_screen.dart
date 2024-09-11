@@ -27,15 +27,15 @@ class _HomeScreenState extends State<HomeScreen> {
     }
   }
 
-  fetchData() async {
-    var url = Uri.parse('https://jsonplaceholder.typicode.com/posts');
-    var response = await http.get(url); 
-    if (response.statusCode == 200) {
-      print("data fetched succesfully ${response.body}");
-    } else {
-      print("failed to print data ");
-    }
-  }
+  // fetchData() async {
+  //   var url = Uri.parse('https://jsonplaceholder.typicode.com/posts');
+  //   var response = await http.get(url); 
+  //   if (response.statusCode == 200) {
+  //     print("data fetched succesfully ${response.body}");
+  //   } else {
+  //     print("failed to print data ");
+  //   }
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -45,7 +45,7 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       body: Column(
         children: [
-          ElevatedButton(onPressed: fetchData, child: Text("fetch data")),
+          // ElevatedButton(onPressed: fetchData, child: Text("fetch data")),
           Center(child: Text("sachin")),
           Expanded(
             child: FutureBuilder(

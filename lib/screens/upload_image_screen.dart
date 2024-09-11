@@ -5,7 +5,6 @@ import "package:http/http.dart" as http;
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:modal_progress_hud_nsn/modal_progress_hud_nsn.dart';
-
 class UploadImageScreen extends StatefulWidget {
   const UploadImageScreen({super.key});
 
